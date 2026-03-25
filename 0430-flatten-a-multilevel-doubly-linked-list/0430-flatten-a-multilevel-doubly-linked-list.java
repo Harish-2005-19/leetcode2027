@@ -25,7 +25,7 @@ class Solution {
                 }
                 if(up!=null){
                     curr.next=up;
-                    curr.next.prev=curr;
+                    up.prev=curr;
                 }
             }
             curr=curr.next;
