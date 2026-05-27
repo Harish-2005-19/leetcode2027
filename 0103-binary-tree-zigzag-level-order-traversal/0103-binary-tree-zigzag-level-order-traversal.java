@@ -39,11 +39,9 @@ class Solution {
                 } else {
                     list.add(0, curr.val);
                 }
-
                 if(curr.left != null) queue.add(curr.left);
                 if(curr.right != null) queue.add(curr.right);
             }
-
             ans.add(list);
             leftToRight = !leftToRight;
         }
