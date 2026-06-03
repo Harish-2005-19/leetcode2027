@@ -9,7 +9,6 @@ class Solution {
                 if(nums2[j] == nums1[i]){
                     match = true ;
                 }
-
                 if(match && nums2[j] > nums1[i])
                 {
                     if(nextGreter == -1){
@@ -19,7 +18,6 @@ class Solution {
             }
             nums1[i] = nextGreter;
         }
-
         return nums1 ;
     }
 }
