@@ -1,6 +1,5 @@
 class Solution {
     public int sumOfUnique(int[] nums) {
-        Arrays.sort(nums);
         int n = nums.length;
         int sum=0;
         int f[] = new int [256];
