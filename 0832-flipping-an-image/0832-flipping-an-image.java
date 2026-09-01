@@ -14,12 +14,10 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             flip(nums[i]);
             for(int j=0;j<nums.length;j++){
-                if(nums[i][j]==1){
+                if(nums[i][j]==1)
                     nums[i][j]=0;
-                }
-                else if(nums[i][j]==0){
+                else if(nums[i][j]==0)
                     nums[i][j]=1;
-                }
             }
         }
         return nums;
