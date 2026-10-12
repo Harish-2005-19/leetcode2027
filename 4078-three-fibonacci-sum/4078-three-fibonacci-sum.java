@@ -1,0 +1,11 @@
+class Solution {
+    public boolean threeFibonacciSum(int n) {
+        if (n % 2 == 1) return false;
+        long c = n / 2;
+        return isSquare(5 * c * c + 4) || isSquare(5 * c * c - 4);
+    }
+    private boolean isSquare(long x) {
+        long r = Math.round(Math.sqrt(x));
+        return r * r == x;
+    }
+}
